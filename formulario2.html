@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividad Formularios</title>
+    <link rel="stylesheet" href="estilosFormulario2.css">
+</head>
+<body>
+    <form action="URL">
+        <h1>La mejor tienda gourmet</h1>
+        <img class="imgEncabezado" src="tienda_gourmet.jpg" alt="imagen de la tienda gourmet">      
+        <hr>
+        <h3>ENVIAR LA COMPRA A:</h3>
+        <fieldset>
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" placeholder="Escriba su nombre completo" size= "45" autofocus> <br><br>
+            <label class="labelDirección" for="address">Dirección:</label>
+            <textarea name="dirección" id="address" cols="30" rows="4"></textarea><br><br>
+            <label for="city">Ciudad:</label>
+            <input type="text" id="city" name="ciudad"><br><br>
+            <label for="provincia">Provincia:</label>
+            <input type="text" id="provincia" name="campo_provincia"><br><br>
+            <label for="CP">C.P.:</label> 
+            <input type="text" id="CP" size="10" name="código postal" pattern="[0-9]{5}" title="código postal de 5 dígitos">
+        </fieldset>
+            <hr>
+            <h3>PAGO:</h3>
+            <fieldset>
+               <legend>Forma de pago</legend> 
+               <label>Forma de pago:</label> <br>
+               <input type="radio" name="efectivo" value="E">Efectivo
+               <input type="radio" name="tarjeta" value="T">Tarjeta
+            </fieldset><br>
+            <label>Seleccione su Tarjeta:</label>
+            <select name="menu" size="3">
+                <option value="1" selected>Banco Santander</option>
+                <option value="2">Banco Sabadell</option>
+                <option value="3">Abanca</option>
+            </select>
+                <label for="num_tarjeta">Nº Tarjeta:</label>
+                <input type="text" name="número tarjeta" id="num_tarjeta" size="30"> 
+            <hr>
+            <label class="labelNegrita">FECHA deseada de entrega(Día-Mes-Año):</label>
+            <input type="text" size="10" pattern="[1-31]" title="introduzca una fecha comprendida entre el día 1 y el día 31">
+            <select name="elegir:mes" id="mes">
+            <option value="1">Enero</option>
+            <option value="2">Febrero</option>
+            <option value="3">Marzo</option>
+            <option value="4">Abril</option>
+            <option value="5">Mayo</option>
+            <option value="6">Junio</option>
+            <option value="7">Julio</option>
+            <option value="8">Agosto</option>
+            <option value="9">Septiembre</option>
+            <option value="10" selected>Octubre</option>
+            <option value="11">Noviembre</option>
+            <option value="12">Diciembre</option>
+        </select>
+        <input type="text" name="año" id="year" placeholder="2021" disabled="disabled" size="3">
+        <hr>
+        <fieldset>
+            <label for="color">Si su pedido es para un regalo, puede elegir el color del envoltorio.</label>
+            <input type="color" id="color" name="color_envoltorio" value="#000000">
+            <hr>
+            <label>Desea recibir información de nuestras ofertas a través de:</label>
+           <input type="checkbox" name="correo_ordinario" id="correoOrdnario" value="cas1"> <label for="correoOrdnario">Correo ordinario</label>
+            <input type="checkbox" name="email" value="cas2" id="mailCheckBox"> <label for="mailCheckBox">email</label>
+            <input type="checkbox" name="teléfono" value="cas3" id="phone"><label for="phone">Teléfono</label> <br>
+           <label for="emailCaja">email:</label> <input type="email" size="50" id="emailCaja"><br>
+            <label for="telCaja">Teléfono:</label><input type="tel" id="telCaja">     
+            <hr>
+            <p>Fecha de nacimiento: <input type="date"> Le obsequiaremos con un detalle por su cumpleaños</p>
+            <hr>
+            <p>Alguna sugerencia? <input list="sugerencias">
+            <datalist id="sugerencias">
+                <option value="Mejor presentación"></option>
+                <option value="Para regalo"></option>
+                <option value="Envío más rápido"></option>
+            </datalist>
+            </p>
+        </fieldset>
+        <hr>
+        <button type="submit" class="pagar"><img class="imgPagar" src="tarjetas.png" alt="imagen de tarjetas de crédito"></button>
+        <button class="reset" type="reset">Borrar datos</button>
+    </form>
+</body>
+</html>

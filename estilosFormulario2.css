@@ -1,0 +1,62 @@
+
+form{
+    width: 800px;
+    margin-left: 25%;
+    background-color: rgb(190, 186, 186);
+    padding: 1%;
+}
+fieldset{
+    border-color: white;
+    border-style: solid;
+}
+hr{
+    color: white;
+}
+h1{
+    text-align: center;
+}
+.imgEncabezado{
+    height: 250px;
+    width: 450px;
+    margin-left: 175px;
+}
+.labelDirección{
+    vertical-align: top;;
+}
+.labelNegrita{
+    font-weight: bold;
+}
+.imgPagar{
+    width: 100px;
+    height: 100px
+}
+.pagar{
+    width: 100px;
+    height: 100px;
+}
+.reset{
+   
+    margin-left: 90%;
+}
+
+#name{
+    margin-left: 20px;
+}
+#address{
+    margin-left: 10px;
+}
+#city{
+    margin-left: 27px;
+}
+#provincia{
+    margin-left: 12px;
+}
+#CP{
+    margin-left: 47px;
+}
+#emailCaja{
+    margin-left: 40px;
+}
+#telCaja{
+    margin-left: 23px;
+}
